@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script type="module" src="index.js" defer></script>
+</head>
+<body>
+    <img src="img/bck-img.jpg" class="back-img"></img>
+    <header>
+        <h1>
+            REGISTER
+        </h1>
+        <nav>
+            <a href="" class="button-registro">Registro</a>
+            <a href="" class="button-usuarios">Perfil</a>
+        </nav>
+    </header>
+    <article>
+
+
+        <form class="crud-form">
+            <h2 class="form-h2">Registro</h2>
+            <div class="form-namesurnamediv">
+                <input type="text" name="nombre" placeholder="Nombre" class="form-input-sm">
+                <input type="text" name="apellidos" placeholder="Apellido" class="form-input-sm">
+            </div>
+            <input type="text" name="usuario" placeholder="Usuario" class="form-input">
+            <input type="email" name="email" placeholder="Email" class="form-input">
+            <input type="password" name="password" placeholder="Contraseña" class="form-input">
+            <input type="date" name="date" class="form-input">
+            <input type="submit" value="Enviar" class="form-submit">
+            <input type="hidden" name="id">
+            <p id="alreadyRegistered"></p>
+        </form>
+
+
+        <div class="users-form">
+            <div class="profile-cell">
+                <div class="cell-div-p">
+                    <p><b> Nombre: </b></p>
+                </div>
+                <div class="cell-div"> 
+                    <p id="name-content">Adrián</p>
+                </div>
+                <div class="cell-div-butt">
+                    <button class="button-edit" id="button-edit-name"><img src="img/edit.png" alt="edit" class="button-img"></button>
+
+                </div>
+            </div>
+            <hr>
+
+            <div class="profile-cell">
+                <div class="cell-div-p">
+                    <p><b> Apellido: </b></p>
+                </div>
+                <div class="cell-div"> 
+                    <p id="surname-content">Pueyo</p>
+                </div>
+                <div class="cell-div-butt">
+                    <button class="button-edit" id="button-edit-surname"><img src="img/edit.png" alt="edit" class="button-img"></button>
+
+                </div>
+            </div>
+            <hr>
+
+            <div class="profile-cell">
+                <div class="cell-div-p">
+                    <p><b> Usuario: </b></p>
+                </div>
+                <div class="cell-div"> 
+                    <p id="user-content">adrianp35</p>
+                </div>
+                <div class="cell-div-butt">
+                    <button class="button-edit" id="button-edit-user"><img src="img/edit.png" alt="edit" class="button-img"></button>
+
+                </div>
+            </div>
+            <hr>
+
+            <div class="profile-cell">
+                <div class="cell-div-p">
+                    <p><b> Nacimiento: </b></p>
+                </div>
+                <div class="cell-div"> 
+                    <p  id="date-content">10/11/1999</p>
+                </div>
+                <div class="cell-div-butt">
+                    <button class="button-edit" id="button-edit-date"><img src="img/edit.png" alt="edit" class="button-img"></button>
+
+                </div>
+            </div>
+            <hr>
+
+            
+            <div class="profile-cell">
+                <div class="cell-div-p">
+                    <p><b> Email: </b></p>
+                </div>
+                <div class="cell-div"> 
+                    <p id="mail-content">adrian@gmail.com</p>
+                </div>
+                <div class="cell-div-butt">
+
+                </div>
+            </div>
+            <hr>
+
+            <button class="delete-button" id="delete-button"><img src="img/delete.png" alt="delete" class="button-img"></button>
+            <p id="errorMsg"></p>
+        </div>
+    </article>
+</body>
+</html> 

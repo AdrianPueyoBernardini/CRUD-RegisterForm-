@@ -1,0 +1,226 @@
+/*GENERALS*/
+html{
+    font-family:"Montserrat", sans-serif;
+    font-optical-sizing: auto;
+
+}
+input:focus{
+    outline: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.back-img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/*NAV*/
+header{
+    width: 100%;
+    height: 80px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: rgb(31, 31, 31);
+    box-shadow: 6px 6px 5px rgba(51, 51, 51, 0.315);
+
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+}
+nav a:hover{
+    text-decoration:underline;
+    color: rgb(226, 226, 226);
+}
+
+h1{
+    color: white;
+}
+
+/* REGISTER FORM*/
+.crud-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+
+
+    margin-top: 200px;
+
+    width: 300px;
+    height: 400px;
+
+
+
+
+}
+.crud-form input{
+    border: 1px solid rgb(131, 131, 131);
+    border-radius: 3px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.473);
+    border-radius: 5px;
+
+}
+.form-submit{
+
+    width: 60%;
+    height: 40px;
+
+}
+.form-submit:hover{
+    background-color: rgb(230, 230, 230);
+
+}
+.form-namesurnamediv{
+    display: flex;
+    justify-content: space-between;
+
+}
+.form-input{
+    height: 35px;
+    width: 100%;
+
+}
+.form-input-sm{
+    height: 35px;
+    width: 45%;
+
+}
+.form-h2{
+    font-weight: 400;
+    font-size: 40px;
+    color: rgb(3, 3, 3);
+
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 10px;
+
+}
+
+/*USER PROFILE*/
+.users-form{
+
+    width: 600px;
+    height: 370px;
+
+    text-align: center;
+    margin: auto;
+    margin-top: 200px;
+
+    background-color: white;
+    border-radius: 10px;
+
+}
+/*INDIVIDUAL PROFILE CELL CONTENT!!!!*/
+.profile-cell{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 50px;
+
+}
+.cell-div{
+
+    height: 100%;
+    width: 31%;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow:hidden;
+
+}
+.cell-div-p{
+    height: 100%;
+    width: 31%;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    overflow:hidden;
+}
+#errorMsg{
+    color: red;
+    margin-top: 10px;
+}
+#alreadyRegistered{
+    color: red;
+    margin-top: 10px;
+    font-weight: 700;
+}
+.cell-div-butt{
+
+    height: 100%;
+    width: 31%;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+
+}
+.cell-div-butt button{
+    margin-left: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    height: 30px;
+    width: 30px;
+
+    border-radius: 4px;
+    background-color: rgb(228, 228, 228);
+    transition: 0.18s ease-in-out;
+
+}
+.delete-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    margin-top: 10px;
+    border: none;
+    height: 50px;
+    width: 50px;
+
+    border-radius: 4px;
+    background-color: rgb(228, 228, 228);
+    transition: 0.18s ease-in-out;
+}
+
+.button-edit:hover{
+    background-color: rgb(179, 195, 245);
+}
+.delete-button:hover{
+    background-color: rgb(245, 179, 179);
+}
+.button-img{
+    height: 70%;
+}
+.profile-cell p{
+    color: black;
+}
